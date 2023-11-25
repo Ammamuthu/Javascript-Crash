@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: blue;
+
+        }
+        h1{
+            color: chartreuse;
+            background-color: chocolate;
+            font-size: larger;
+        }
+
+
+
+    </style>
+    <h1 id="bi"> Auto R efresh </h1>
+
+    <input id="vi">
+
+    <button onclick="refresh()">sumit</button>
+
+    <script>
+        function refresh(){
+
+            time=document.getElementById("vi").value;
+            time=parseInt(time);
+
+
+            setTimeout("location.reload(true)",time*1000);
+
+            if("location.reload(true)",time*1000);     {
+
+                document.getElementById("bi").style.color="green";
+            }
+         }
+
+    </script>
+</body>
+</html>

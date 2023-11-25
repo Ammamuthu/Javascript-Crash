@@ -1,0 +1,133 @@
+<html>
+       <head>
+        <title> Calculator </title>
+    </head>
+    <style>
+    .clear
+    {
+        padding: 15px;
+        margin: 2;
+        color: black;
+        font-size:large;
+        background-color: rgb(229, 232, 235);
+        margin-top:300px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 2px;
+    }
+    input
+    {
+        padding: 20px;
+        font-size: larger;
+    }
+    body
+    {
+        background-color: bisque;
+    }
+    </style>
+
+    <script>
+
+        function numone(){
+            document.write(1);
+            return false;
+        }
+
+
+
+    </script>
+    <body>   
+        <input type="name" value="" id="lal"/>
+        <!-- <button name="clear">Cl</button> -->
+        <!-- <button  onclick="send(=)> = </button>
+        <button onclick="send(+)"> + </button>
+        <button onclick="send(-)"> - </button>
+        <button onclick="send(*)"> * </button>
+        <button class="clear"onclick="send(/)"> / </button> -->
+        <!-- <button name="name1" onclick="numone()"> 1 </button> -->
+        <button class="clear"onclick="send(1)"> 1 </button>
+        <button class="clear"onclick="send(2)"> 2 </button>
+        <button class="clear"onclick="send(3)"> 3 </button>
+        <button class="clear"onclick="send(4)"> 4 </button>
+        <button class="clear"onclick="send(5)"> 5 </button>
+        <button class="clear"onclick="send(6)"> 6 </button>
+        <button class="clear"onclick="send(7)"> 7 </button>
+        <button class="clear"onclick="send(8)"> 8 </button>
+        <button class="clear"onclick="send(9)"> 9 </button>
+        <button class="clear"onclick="send(0)"> 0 </button>
+        
+        <button class="clear"onclick="send('=')"> = </button>
+        <button class="clear"onclick="send('+')"> + </button>
+        <button class="clear"onclick="send('-')"> - </button>
+        <button class="clear" onclick="send('*')"> * </button>
+        <button  class="clear"onclick="send('Ac')"> AC </button>
+        <!-- <button class="clear"onclick="send()> % </button> -->
+        <!-- <button class="clear"onclick="send(1)"> mod </button> -->
+        <script>
+            function send(i){
+                a=document.getElementById("lal");
+
+                switch(i){
+                            case 1:
+                                a.value+=1;
+                                break;
+                            case 2:
+                                a.value+=2;
+                                break;
+                            case 3:
+                                a.value+=3;
+                                break;
+                            case 4:
+                                a.value+=4;
+                                break;
+                            case 5:
+                                a.value+=5;
+                                break;
+                            case 6:
+                                a.value+=6;
+                                break;
+                            case 7:
+                                a.value+=7;
+                                break;
+                            case 8:
+                                a.value+=8;
+                                break;
+                            case 9:
+                                a.value+=9;
+                                break;
+                            case 0:
+                                a.value+=0;
+                                break;
+
+
+                            case 'Ac':
+                                a.value=" ";
+                                break;
+                            
+                            case '+':
+                                a.value+='+';
+                                break;
+                            case '-':
+                                a.value+='-';
+                                break;
+                            case '*':
+                                a.value+='*';
+                                break;
+
+                            case '/':
+                                a.value+='/';
+                                break;
+
+
+                            case '=':
+                                result=eval(a.value)
+                                a.value=result
+
+                }
+            }
+        </script>
+    </body>
+</html>
+
+
+

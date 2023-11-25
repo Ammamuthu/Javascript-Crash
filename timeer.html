@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title> Timer </title>
+    </head>
+    <body>
+        <h1> timer Broo </h1>
+        <p  id="fi"  style="background-color:aqua; color:brown; font-family: Georgia, 'Times New Roman', Times, serif; width: 200px;padding: 20px;font-size: 50px;">   </p>
+        <button onclick="start()"> Start </button>
+
+        <button onclick="stop()"> Stop</button>
+        <script>
+        
+        function Timeclock(){
+
+        
+            date=new Date();
+            hour=date.getHours();
+            mins=date.getMinutes();
+            secs=date.getSeconds();
+            timmer=date.toLocaleTimeString();
+            
+            
+            x=document.getElementById("fi");
+        
+            x.innerHTML=timmer;
+            if (secs%2==0){
+                x.style.color="red";
+            }
+            else{
+                x.style.color="grey";
+            }
+        }
+        function start(){
+             podu=setInterval(Timeclock,1000);
+        }
+
+        function stop(){
+            clearInterval(podu)
+        }
+        </script>
+
+    </body>
+</html>

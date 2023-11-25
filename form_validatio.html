@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  Form Validation </title>
+        
+    </head>
+    
+    <script>
+
+        
+        function Validate(){
+           var a = document.demo.Username.value;
+           if(a==""){
+               alert("Vaipilla Raja");
+               return false;
+           }
+
+           var v = document.demo.passwor.value;
+           if (v.length<=5){
+               alert("Pass word Soldrra ");
+               return false;
+           }
+           
+        }
+        // validate()
+
+
+
+    </script>
+    <body>
+
+       <form name="demo"  action="index.html" onsubmit="return Validate()">
+       <h1>  Validate Ka sale Form KI </h1><br><br>
+       <div style="color :blue; font-size: larger;">  Enter <input type="text" name="Username" style="color:brown;border-radius: 50px;font-family:sans-serif"><br></div>
+       <input type="password" name="passwor"><br>
+
+
+       <input type="submit" name="sumbit"><br>
+
+    </form>
+    </body>
+</html>
+
+
+
+
+<!-- <html>
+    <head>
+        <title>
+            form Validation
+        </title>
+    </head>
+</html> -->

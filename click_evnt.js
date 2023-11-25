@@ -1,0 +1,3 @@
+function abs(){
+    alert("welcome ")
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input></input><br><br>
+    <input placeholder="last name" ></input> 
+    <button onclick="Cs()"> sumbit </button>
+
+    <p>  </p>
+    <p>  </p>
+
+    <script>
+            function Cs(){
+                box=document.getElementsByTagName("input");
+                date=document.getElementsByTagName("p");
+
+
+                // date[0].innerHTML=box[0].value;
+            
+            
+                // date[1].innerHTML=box[1].value;
+
+
+
+
+                for(i=0;i<box.length;i++){
+                    date[i].innerHTML=box[i].value;
+                }
+            }
+
+    </script>
+    
+</body>
+</html>

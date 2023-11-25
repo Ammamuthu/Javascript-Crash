@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <style>
+
+        button
+        {
+            background-color: blueviolet;
+            color: chartreuse;
+            font-size: larger;
+            padding: auto;
+
+        }
+    </style>
+    <img src="image/god.jpg" height="300" width="200"  id="li"/><br><br>
+    <button onclick="Forward()">
+        =>
+
+    </button>
+    <button onclick="backward()"> <= </button>
+
+    
+    <script>
+            a=["image/god.jpg","image/doorstep.jpg","image/pp.jfif"]
+            x=document.getElementById("li");
+            count=-1;
+
+            function Forward(){
+
+                count=count+1;
+                if (count<a.length)
+                {
+                    if(count==3)
+                    {
+                        count=0;
+                    }
+
+                    x.src=a[count];
+
+                }
+
+
+                function backward(){
+                    count=count-1;
+
+
+
+                    if (count<a.length){
+
+
+                        if(count==-2 || count==-1){
+                                                            
+
+
+                            count=2;
+
+                        }
+                        x.src=a[count];
+                    }
+                }
+                
+
+            }
+    </script>
+</body>
+</html>
